@@ -6,10 +6,15 @@ public class Constructor {
             age=a;
             rol=b;
         }
+        void print(){
+            System.out.println(age);
+            System.out.println(rol);
+        }
     }
     public static void main(String[] args) {
         cons cons = new cons(23,22);
-        System.out.println(cons.age);
-        System.out.println(cons.rol);
+        cons cons1=new cons(45,32);
+       cons.print();
+       cons1.print();
     }
 }
